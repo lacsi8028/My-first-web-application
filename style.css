@@ -1,0 +1,35 @@
+body {
+    background: whitesmoke;
+    font-family: 'Share Tech Mono', monospace;
+    }
+
+h1 {
+     padding-top: 30px;
+     text-align: center;
+      }
+
+.slideshow-container {
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+    }
+
+.arrow-left {
+    position: fixed;
+    top: 50%;
+    left: 100px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.arrow-right {
+    transform: rotate(0.5turn);
+    position: fixed;
+    top: 50%;
+    right: 100px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
