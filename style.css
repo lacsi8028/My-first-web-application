@@ -1,27 +1,51 @@
 body {
     background: whitesmoke;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Abril Fatface', cursive;
     }
 
 h1 {
-     padding-top: 30px;
      text-align: center;
+     font-size: 50px;
+     letter-spacing: 3px;
       }
 
-.PhotoTitle p {
-    font-family: 'Abril Fatface', cursive;
+
+.slideshow-container {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    }
+
+.slideshow-container img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover; 
+}   
+.gray-container {
+    background-color: black;
     position: absolute;
-    top: 520px;
-    left: 350px;
+    top: 600px;
+    width: 1000px;
+    height: 135px;
+    opacity: 0.6;
+    }
+
+h3 {
+    top: -150px;
+    color: white;
+    position: relative;
+    left: 10px;
     font-weight: 50;
     font-size: 26px;
     }
 
-.slideshow-container {
-    max-width: 600px;
-    max-height: 600px;
-    margin: 0 auto;
-    padding-top: 30px;
+p {
+    position: relative;
+    top: -165px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 14px;
+    left: 10px;
     }
 
 .arrow-left {
