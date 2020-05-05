@@ -1,7 +1,20 @@
 body {
-    background: whitesmoke;
+    background: #e8e7e4;
     font-family: 'Abril Fatface', cursive;
     }
+
+    div {
+        display: flex;
+        justify-content: center;
+      }
+
+.left {
+    margin-left: 50px;
+}
+
+.right{
+    margin-right: 50px;
+}
 
 h1 {
      text-align: center;
@@ -9,18 +22,23 @@ h1 {
      letter-spacing: 3px;
       }
 
+aside{
+     width: 80px;
+     height: 600px;
+     background:white;
+}
 
 .slideshow-container {
     width: 1000px;
     height: 600px;
-    margin: 0 auto;
+    margin: 0;
     }
 
 .slideshow-container img {
-    width: 600px;
-    height: 600px;
+    position: relative;
     object-fit: cover; 
 }   
+
 .gray-container {
     background-color: black;
     position: absolute;
@@ -30,39 +48,39 @@ h1 {
     opacity: 0.6;
     }
 
-h3 {
-    top: -150px;
-    color: white;
-    position: relative;
-    left: 10px;
+.slideshow-container h3 {
+    position: fixed;
+    top: 590px;
+    left: 160px;
+    color: whitesmoke;
     font-weight: 50;
     font-size: 26px;
+    z-index: 10;
     }
 
-p {
-    position: relative;
-    top: -165px;
+.slideshow-container p {
+    position: fixed;
+    top: 650px;
+    left: 160px;
+    color: whitesmoke;
     font-family: 'Source Sans Pro', sans-serif;
-    color: white;
     font-size: 14px;
-    left: 10px;
+    z-index: 10;
     }
 
 .arrow-left {
     position: fixed;
-    top: 50%;
-    left: 100px;
-    width: 10px;
-    height: 10px;
+    top: 400px;
+    left: 50px;
+    width: 100px;
     cursor: pointer;
 }
 
 .arrow-right {
     transform: rotate(0.5turn);
     position: fixed;
-    top: 50%;
-    right: 100px;
-    width: 10px;
-    height: 10px;
+    top: 400px;
+    right: 50px;
+    width: 100px;
     cursor: pointer;
 }

@@ -4,7 +4,7 @@ let data = {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed justo dolor. Praesent convallis est ullamcorper risus tincidunt, eget viverra ante convallis. Duis rhoncus blandit accumsan.'
   };
 
-let currentPhoto = 6;
+let currentPhoto = 4;
 
 var images = [
     "Images/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
