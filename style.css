@@ -8,9 +8,18 @@ h1 {
      text-align: center;
       }
 
+.PhotoTitle p {
+    font-family: 'Abril Fatface', cursive;
+    position: absolute;
+    top: 520px;
+    left: 350px;
+    font-weight: 50;
+    font-size: 26px;
+    }
+
 .slideshow-container {
-    max-width: 800px;
-    max-height: 800px;
+    max-width: 600px;
+    max-height: 600px;
     margin: 0 auto;
     padding-top: 30px;
     }
