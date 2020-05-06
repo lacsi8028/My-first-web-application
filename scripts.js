@@ -6,6 +6,28 @@ let data = {
 
 let currentPhoto = 2;
 
+let loadPhoto = (photoNumber) => {
+    $('#photo').attr('src', data.photo);
+$('#photo-title').text(data.title);
+$('#photo-description').text(data.description);
+}
+
+$('#previus').click(() => {
+    if(currentPhoto > 1) {
+    currentPhoto--;
+    }
+    loadPhoto(currentPhoto);
+  });
+
+$('#next').click(() => {
+    if(currentPhoto < 7) {
+    currentPhoto++;
+    }
+    loadPhoto(currentPhoto);
+  });
+
+loadPhoto(currentPhoto);
+
 var images = [
     "Images/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
     "Images/karim-manjra-QZv2PEXUk7c-unsplash.jpg",
@@ -36,13 +58,10 @@ var explanations = [
     "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
 ]
 
+$('#photo').attr('src', data.photo);
+$('#photo-title').text(data.title);
+$('#photo-description').text(data.description);
 
-  $('#photo').attr('src', data.photo);
-  $('#photo-title').text(data.title);
-  $('#photo-description').text(data.description);
- 
-  
-  $('#photo').attr('src', images[currentPhoto]);
-  $('#photo-title').text(subtitles[currentPhoto]);
-  $('#photo-description').text(explanations[currentPhoto]);
-
+$('#photo').attr('src', images[currentPhoto]);
+$('#photo-title').text(subtitles[currentPhoto]);
+$('#photo-description').text(explanations[currentPhoto]);
