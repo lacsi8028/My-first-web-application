@@ -3,7 +3,7 @@ body {
     font-family: 'Abril Fatface', cursive;
     }
 
-    div {
+div {
         display: flex;
         justify-content: center;
       }
@@ -55,7 +55,7 @@ aside{
     color: whitesmoke;
     font-weight: 50;
     font-size: 26px;
-    z-index: 10;
+    z-index: 9;
     }
 
 .slideshow-container p {
@@ -65,7 +65,7 @@ aside{
     color: whitesmoke;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
-    z-index: 10;
+    z-index: 9;
     }
 
 .arrow-left {
@@ -84,4 +84,15 @@ aside{
     width: 100px;
     cursor: pointer;
 }
+#thumbnail {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background: lime;
   }

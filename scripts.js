@@ -7,7 +7,7 @@ let imagesData = [{
   },
   {
     photo: "Images/karim-manjra-QZv2PEXUk7c-unsplash.jpg",
-    title: "Back to the starts",
+    title: "Back to the start",
     description: "Ut pretium molestie purus, vitae ornare tellus accumsan vel. Donec congue mi vitae rhoncus placerat. Nunc id tempus enim, at cursus tortor.",
   },
   {
@@ -17,12 +17,12 @@ let imagesData = [{
   },
   {
     photo: "Images/nasa-U2uKrI4lci8-unsplash.jpg",
-    title: "Small step ",
+    title: "Small step",
     description: "Donec pretium nunc ex, in iaculis ex scelerisque in. Pellentesque a tellus vel arcu cursus commodo a iaculis arcu.",
   },
   {
     photo: "Images/roman-kraft-g_gwdpsCVAY-unsplash.jpg",
-    title: "Buildings in a cosy town",
+    title: "Cosy town",
     description: "Nunc vel convallis ipsum. Mauris luctus turpis orci, in consectetur nisi aliquet a. Duis vitae rhoncus eros.",
   },
   {
@@ -89,3 +89,18 @@ var description = [
   "Praesent enim sapien, consequat sed congue vitae, semper et arcu. Sed vel ultrices ex, eu fermentum mi.",
   "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
 ]
+
+let data = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"];
+
+data.forEach((item, index) => {
+  $('#thumbnail').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
+  $('.box').click((event) => {
+    let indexClicked = $(event.target).attr('data-index');
+    // indexClicked is now a string! if you need it as a number you have to change it
+    // because for example "1" + 1 is going to be "11" and not 2
+    let numberIndex = parseInt(indexClicked);
+    // now numberIndex is a number
+    $('#clicked').text(data[indexClicked]);
+  });
+});
+
